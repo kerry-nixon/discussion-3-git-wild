@@ -11,14 +11,14 @@ library(tidyverse)
 ## Part A: Make edits (no conflict)
 
 ```{r partner_1a}
-# Partner 1: 
+# Partner 1: Kerry Nixon
 # Run the code below to see the original graph
 # Change the code below to make the point color change based on 'cut', and update the theme to theme_bw(). Update the title to include your first name. 
 
 ggplot(data = diamonds, aes(x = carat, y = price)) +
-  geom_point() +
-  theme_void() +
-  labs(title = "YOURNAME was here")
+  geom_point(aes(color = cut)) +
+  theme_bw() +
+  labs(title = "KERRY was here")
 ```
 
 ```{r partner_2a}
